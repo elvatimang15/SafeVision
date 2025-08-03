@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:id="@+id/detection"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="DETECTION"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#E0DFDF"/>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/detection"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/scanresult"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Helmet"-->
+<!--        android:background="#5F5F5F"-->
+<!--        android:padding="8dp"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_below="@+id/image"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:gravity="center"/>-->
+
+    <LinearLayout
+        android:id="@+id/status_colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="55dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/status_red"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/circle_red" />
+
+        <View
+            android:id="@+id/status_orange"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/circle_orange" />
+
+        <View
+            android:id="@+id/status_yellow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/circle_yellow" />
+
+        <View
+            android:id="@+id/status_green"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="6dp"
+            android:background="@drawable/circle_green" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_pperecommend"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="PPE Recommendations"
+        android:background="@drawable/button_rounded"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/status_colors"
+        android:layout_centerInParent="true"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_savesend"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Save and Send"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_rounded"
+        android:backgroundTint="@null"
+        android:layout_below="@id/btn_pperecommend"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

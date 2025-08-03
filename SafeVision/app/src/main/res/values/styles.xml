@@ -1,0 +1,7 @@
+<resources>
+    <style name="RoundedButton" parent="Widget.Material3.Button">
+        <item name="android:background">@drawable/button_rounded</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">16dp</item>
+    </style>
+</resources>

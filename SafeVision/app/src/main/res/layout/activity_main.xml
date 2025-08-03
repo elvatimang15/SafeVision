@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logovale"
+        android:layout_width="125dp"
+        android:layout_height="100dp"
+        android:src="@drawable/vale"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/logounhas"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="210dp"
+        android:src="@drawable/logounhas"
+        android:layout_toRightOf="@+id/logovale"/>
+
+    <ImageView
+        android:id="@+id/kartunkaryawan"
+        android:layout_width="150dp"
+        android:layout_height="280dp"
+        android:src="@drawable/kartunkaryawanvale"
+        android:layout_below="@+id/logovale"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SafeVision"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="#2F2F2F"
+        android:layout_below="@id/kartunkaryawan"
+        android:layout_marginTop="-25dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Safety Yes, Production Yes"
+        android:layout_below="@+id/judul"
+        android:layout_marginLeft="15dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_rounded"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/slogan"/>
+
+
+</RelativeLayout>
